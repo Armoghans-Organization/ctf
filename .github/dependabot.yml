@@ -1,0 +1,19 @@
+# Dependabot configuration file for keeping dependencies up-to-date 🛠️
+version: 2
+
+updates:
+    # NPM packages updates 🌐
+    - package-ecosystem: 'npm' # 🛠️ Node.js package ecosystem
+      directory: '/' # 📁 Location of package manifests (package.json)
+      schedule:
+          interval: 'weekly' # ⏰ Frequency of updates
+      allow:
+          - dependency-type: 'all' # 👥 Update all types of dependencies (direct and development)
+
+    # GitHub Actions updates 🚀
+    - package-ecosystem: 'github-actions' # 🚀 GitHub Actions ecosystem
+      directory: '/' # 📁 Location of GitHub Actions workflows
+      schedule:
+          interval: 'weekly' # ⏰ Frequency of updates
+      allow:
+          - dependency-type: 'all' # 👥 Update all types of dependencies (direct and development)
