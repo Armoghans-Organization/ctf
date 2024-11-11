@@ -2,7 +2,7 @@
   "name": "ctf",
   "version": "1.0.0",
   "description": "A command-line shell utility for setting up and managing Capture The Flag (CTF)",
-  "main": "index.js",
+  "main": "bin/index.js",
   "private": "true",
   "bin": {
     "ctf": "./bin/index.js"
@@ -10,8 +10,7 @@
   "scripts": {
     "lint": "eslint .",
     "format": "prettier --write .",
-    "lint:fix": "eslint . --fix", 
-    "prepare": "npm run lint && npm run format"
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [
     "CTF",
